@@ -1,0 +1,1 @@
+Building on the previous recipe, we can also look up lemmas in WordNet to find synonyms of a word. 

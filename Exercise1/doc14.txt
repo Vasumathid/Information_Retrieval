@@ -1,0 +1,47 @@
+To our colleagues
+We have supplied an extensive bibliography and pointers to the current literature.Each chapter ends with a set of chapter notes that give historical details and references. The chapter notes do not provide a complete reference to the whole fieldxvi Preface
+of algorithms, however. Though it may be hard to believe for a book of this size,space constraints prevented us from including many interesting algorithms.Despite myriad requests from students for solutions to problems and exercises,we have chosen as a matter of policy not to supply references for problems and exercises, to remove the temptation for students to look up a solution rather than to
+find it themselves.
+look at it, the book changed either not much or quite a bit.
+A quick look at the table of contents shows that most of the second-edition chap-
+ters and sections appear in the third edition. We removed two chapters and one
+section, but we have added three new chapters and two new sections apart from
+these new chapters.
+We kept the hybrid organization from the first two editions. Rather than organiz-
+ing chapters by only problem domains or according only to techniques, this book
+has elements of both. It contains technique-based chapters on divide-and-conquer,
+dynamic programming, greedy algorithms, amortized analysis, NP-Completeness,
+and approximation algorithms. But it also has entire parts on sorting, on data
+structures for dynamic sets, and on algorithms for graph problems. We find that
+although you need to know how to apply techniques for designing and analyzing al-
+gorithms, problems seldom announce to you which techniques are most amenable
+to solving them.
+Here is a summary of the most significant changes for the third edition:
+ We added new chapters on van Emde Boas trees and multithreaded algorithms,
+and we have broken out material on matrix basics into its own appendix chapter.
+ We revised the chapter on recurrences to more broadly cover the divide-and-
+conquer technique, and its first two sections apply divide-and-conquer to solve
+two problems. The second section of this chapter presents Strassen’s algorithm
+for matrix multiplication, which we have moved from the chapter on matrix
+operations.
+ We removed two chapters that were rarely taught: binomial heaps and sorting
+networks. One key idea in the sorting networks chapter, the 0-1 principle, ap-
+pears in this edition within Problem 8-7 as the 0-1 sorting lemma for compare-
+exchange algorithms. The treatment of Fibonacci heaps no longer relies on
+binomial heaps as a precursor.Preface
+xvii
+ We revised our treatment of dynamic programming and greedy algorithms. Dy-
+namic programming now leads off with a more interesting problem, rod cutting,
+than the assembly-line scheduling problem from the second edition. Further-
+more, we emphasize memoization a bit more than we did in the second edition,
+and we introduce the notion of the subproblem graph as a way to understand
+the running time of a dynamic-programming algorithm. In our opening exam-
+ple of greedy algorithms, the activity-selection problem, we get to the greedy
+algorithm more directly than we did in the second edition.
+ The way we delete a node from binary search trees (which includes red-black
+trees) now guarantees that the node requested for deletion is the node that is
+actually deleted. In the first two editions, in certain cases, some other node
+would be deleted, with its contents moving into the node passed to the deletion
+procedure. With our new way to delete nodes, if other components of a program
+maintain pointers to nodes in the tree, they will not mistakenly end up with stale
+pointers to nodes that have been deleted.

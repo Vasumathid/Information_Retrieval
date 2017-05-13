@@ -1,0 +1,1 @@
+Synsets are organized in a hypernym tree. This tree can be used for reasoning about the similarity between the synsets it contains.

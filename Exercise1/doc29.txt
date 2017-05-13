@@ -1,0 +1,139 @@
+S oftware   Software includes the operating system, utilities, and application
+programs. A key threat to software is an attack on availability. Software, especially
+application software, is often easy to delete. Software can also be altered or
+damaged to render it useless. Careful software configuration management, which
+includes making backups of the most recent version of software, can maintain high
+availability. A more difficult problem to deal with is software modification that
+results in a program that still functions but that behaves differently than before,
+which is a threat to integrity/authenticity. Computer viruses and related attacks fall
+into this category. A final problem is protection against software piracy. Although
+Computer system
+Computer system
+4 Sensitive files
+must be secure
+Data (file security)
+Data
+3 Data must be
+securely transmitted
+through networks
+(network security)
+1 Access to the data
+must be controlled
+(protection)
+Processes representing users
+Guard
+Processes representing users
+Guard
+2 Access to the computer
+facility must be controlled
+(user authentication)
+Users making requests
+Figure 1.2  Scope of Computer Security
+Note: This figure depicts security concerns other than physical security, including controlling of
+access to computers systems, safeguarding of data transmitted over communications systems, and
+safeguarding of stored data.1.2 / Threats, Attacks, and Assets   23
+Table 1.3  Computer and Network Assets, with Examples of Threats
+Availability
+Confidentiality
+Integrity
+Hardware Equipment is stolen or
+disabled, thus denying
+service. An unencrypted
+CD-ROM or DVD is
+stolen. Software Programs are deleted,
+denying access to users. An unauthorized copy of
+software is made. A working program is modi-
+fied, either to cause it to fail
+during execution or to cause
+it to do some unintended task.
+Data Files are deleted,
+denying access to users. An unauthorized read
+of data is performed. An
+analysis of statistical data
+reveals underlying data. Existing files are modified or
+new files are fabricated.
+Messages are destroyed or
+deleted. Communication
+lines or networks are
+rendered unavailable. Messages are read. The
+traffic pattern of
+messages is observed. Messages are modified,
+delayed, reordered, or dupli-
+cated. False messages are
+fabricated.
+Communication
+Lines and
+Networks
+certain countermeasures are available, by and large the problem of unauthorized
+copying of software has not been solved.
+D ata   Hardware and software security are typically concerns of computing center
+professionals or individual concerns of personal computer users. A much more
+widespread problem is data security, which involves files and other forms of data
+controlled by individuals, groups, and business organizations.
+Security concerns with respect to data are broad, encompassing availability,
+secrecy, and integrity. In the case of availability, the concern is with the destruction
+of data files, which can occur either accidentally or maliciously.
+The obvious concern with secrecy is the unauthorized reading of data files or
+databases, and this area has been the subject of perhaps more research and effort
+than any other area of computer security. A less obvious threat to secrecy involves
+the analysis of data and manifests itself in the use of so-called statistical databases,
+which provide summary or aggregate information. Presumably, the existence of
+aggregate information does not threaten the privacy of the individuals involved.
+However, as the use of statistical databases grows, there is an increasing potential
+for disclosure of personal information. In essence, characteristics of constituent
+individuals may be identified through careful analysis. For example, if one table
+records the aggregate of the incomes of respondents A, B, C, and D and another
+records the aggregate of the incomes of A, B, C, D, and E, the difference between
+the two aggregates would be the income of E. This problem is exacerbated by the
+increasing desire to combine data sets. In many cases, matching several sets of data
+for consistency at different levels of aggregation requires access to individual units.
+Thus, the individual units, which are the subject of privacy concerns, are available at
+various stages in the processing of data sets.
+Finally, data integrity is a major concern in most installations. Modifications
+to data files can have consequences ranging from minor to disastrous.24    Chapter 1 / Overview
+C ommunication L ines and N etworks   Network security attacks can be classified
+as passive attacks and active attacks. A passive attack attempts to learn or make
+use of information from the system but does not affect system resources. An active
+attack attempts to alter system resources or affect their operation.
+Passive attacks are in the nature of eavesdropping on, or monitoring of, trans-
+missions. The goal of the attacker is to obtain information that is being transmitted.
+Two types of passive attacks are the release of message contents and traffic analysis.
+The release of message contents is easily understood. A telephone conver-
+sation, an electronic mail message, and a transferred file may contain sensitive or
+confidential information. We would like to prevent an opponent from learning the
+contents of these transmissions.
+A second type of passive attack, traffic analysis, is subtler. Suppose that we
+had a way of masking the contents of messages or other information traffic so that
+opponents, even if they captured the message, could not extract the information
+from the message. The common technique for masking contents is encryption. If we
+had encryption protection in place, an opponent might still be able to observe the
+pattern of these messages. The opponent could determine the location and identity
+of communicating hosts and could observe the frequency and length of messages
+being exchanged. This information might be useful in guessing the nature of the
+communication that was taking place.
+Passive attacks are very difficult to detect because they do not involve any
+alteration of the data. Typically, the message traffic is sent and received in an
+apparently normal fashion and neither the sender nor receiver is aware that a
+third party has read the messages or observed the traffic pattern. However, it is
+feasible to prevent the success of these attacks, usually by means of encryption.
+Thus, the emphasis in dealing with passive attacks is on prevention rather than
+detection.
+Active attacks involve some modification of the data stream or the creation
+of a false stream and can be subdivided into four categories: replay, masquerade,
+modification of messages, and denial of service.
+Replay involves the passive capture of a data unit and its subsequent retrans-
+mission to produce an unauthorized effect.
+A masquerade takes place when one entity pretends to be a different entity. A
+masquerade attack usually includes one of the other forms of active attack. For exam-
+ple, authentication sequences can be captured and replayed after a valid authentica-
+tion sequence has taken place, thus enabling an authorized entity with few privileges
+to obtain extra privileges by impersonating an entity that has those privileges.
+Modification of messages simply means that some portion of a legitimate
+message is altered, or that messages are delayed or reordered, to produce an
+unauthorized effect. For example, a message stating, “Allow John Smith to read
+confidential file accounts” is modified to say, “Allow Fred Brown to read confiden-
+tial file accounts.”
+The denial of service prevents or inhibits the normal use or management of
+communication facilities. This attack may have a specific target; for example, an
+entity may suppress all messages directed to a particular destination (e.g., the ­security
+audit service). Another form of service denial is the disruption of an entire network,

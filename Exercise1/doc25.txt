@@ -1,0 +1,58 @@
+Legal, regulations, investigations, and compliance: The types of computer
+crime laws and regulations. The measures and technologies used to investigate
+computer crime incidents.
+•	 Operations security: Used to identify the controls over hardware, media,
+and the operators and administrators with access privileges to any of these
+resources. Audit and monitoring are the mechanisms, tools, and facilities that
+permit the identification of security events and subsequent actions to identify
+the key elements and report the pertinent information to the appropriate indi-
+vidual, group, or process.
+•	 Physical (environmental) security: Provides protection techniques for the
+entire facility, from the outside perimeter to the inside office space, including
+all of the information system resources.
+•	 Security architecture and design: Contains the concepts, principles, structures,
+and standards used to design, monitor, and secure operating systems, equip-
+ment, networks, applications, and those controls used to enforce various levels
+of availability, integrity, and confidentiality.
+•	 Telecommunications and network security: Covers network structures; trans-
+mission methods; transport formats; security measures used to provide avail-
+ability, integrity, and confidentiality; and authentication for transmissions over
+private and public communications networks and media.
+In this book, we cover each of these domains in some depth.
+	 0.4	 Support for Nsa/Dhs Certification
+The U.S. National Security Agency (NSA) and the U.S. Department of Homeland
+Security (DHS) jointly sponsor the National Centers of Academic Excellence in
+Information Assurance/Cyber Defense (IA/CD). The goal of these programs is6    Chapter 0 / Reader’s and Instructor’s Guide
+to reduce vulnerability in our national information infrastructure by promoting
+higher education and research in IA and producing a growing number of profes-
+sionals with IA expertise in various disciplines. To achieve that purpose, NSA/DHS
+have defined a set of Knowledge Units for 2- and 4-year institutions that must be
+supported in the curriculum to gain a designation as a NSA/DHS National Center
+of Academic Excellence in IA/CD. Each Knowledge Unit is composed of a mini-
+mum list of required topics to be covered and one or more outcomes or learning
+objectives. Designation is based on meeting a certain threshold number of core and
+optional Knowledge Units.
+In the area of computer security, the 2014 Knowledge Units document
+[NCAE13] lists the following core Knowledge Units:
+	
+	
+	
+	
+	
+	
+•	 Cyber defense: Includes access control, cryptography, firewalls, intrusion de-
+tection systems, malicious activity detection and countermeasures, trust rela-
+tionships, and defense in depth.
+•	 Cyber threats: Includes types of attacks, legal issues, attack surfaces, attack
+trees, insider problems, and threat information sources.
+•	 Fundamental security design principles: A list of 12 principles, all of which are
+covered in Section 1.4 of this book.
+•	 Information assurance fundamentals: Includes threats and vulnerabilities,
+intrusion detection and prevention systems, cryptography, access control
+models, identification/authentication, and audit.
+•	 Introduction to cryptography: Includes symmetric cryptography, public-key
+cryptography, hash functions, and digital signatures.
+•	 Databases: Includes an overview of databases, database access controls, and
+security issues of inference.
+This book provides extensive coverage in all of these areas. In addition, the
+book partially covers a number of the optional Knowledge Units.

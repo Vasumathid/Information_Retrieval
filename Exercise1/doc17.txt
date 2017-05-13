@@ -1,0 +1,43 @@
+What are algorithms? Why is the study of algorithms worthwhile? What is the role
+of algorithms relative to other technologies used in computers? In this chapter, we
+will answer these questions.
+1.1 Algorithms
+Informally, an algorithm is any well-defined computational procedure that takes
+some value, or set of values, as input and produces some value, or set of values, as
+output. An algorithm is thus a sequence of computational steps that transform the
+input into the output.
+We can also view an algorithm as a tool for solving a well-specified computa-
+tional problem. The statement of the problem specifies in general terms the desired
+input/output relationship. The algorithm describes a specific computational proce-
+dure for achieving that input/output relationship.
+For example, we might need to sort a sequence of numbers into nondecreasing
+order. This problem arises frequently in practice and provides fertile ground for
+introducing many standard design techniques and analysis tools. Here is how we
+formally define the sorting problem:
+Input: A sequence of n numbers ha 1 ; a 2 ; : : : ; a n i.
+Output: A permutation (reordering) ha 1 0 ; a 2 0 ; : : : ; a n 0 i of the input sequence such
+that a 1 0  a 2 0      a n 0 .
+For example, given the input sequence h31; 41; 59; 26; 41; 58i, a sorting algorithm
+returns as output the sequence h26; 31; 41; 41; 58; 59i. Such an input sequence is
+called an instance of the sorting problem. In general, an instance of a problem
+consists of the input (satisfying whatever constraints are imposed in the problem
+statement) needed to compute a solution to the problem.6
+Chapter 1 The Role of Algorithms in Computing
+Because many programs use it as an intermediate step, sorting is a fundamental
+operation in computer science. As a result, we have a large number of good sorting
+algorithms at our disposal. Which algorithm is best for a given application depends
+on—among other factors—the number of items to be sorted, the extent to which
+the items are already somewhat sorted, possible restrictions on the item values,
+the architecture of the computer, and the kind of storage devices to be used: main
+memory, disks, or even tapes.
+An algorithm is said to be correct if, for every input instance, it halts with the
+correct output. We say that a correct algorithm solves the given computational
+problem. An incorrect algorithm might not halt at all on some input instances, or it
+might halt with an incorrect answer. Contrary to what you might expect, incorrect
+algorithms can sometimes be useful, if we can control their error rate. We shall see
+an example of an algorithm with a controllable error rate in Chapter 31 when we
+study algorithms for finding large prime numbers. Ordinarily, however, we shall
+be concerned only with correct algorithms.
+An algorithm can be specified in English, as a computer program, or even as
+a hardware design. The only requirement is that the specification must provide a
+precise description of the computational procedure to be followed.

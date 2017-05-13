@@ -1,0 +1,60 @@
+Since the second edition of this book was published, the field has seen continued innovations
+and improvements. In this new edition, we try to capture these changes while maintaining a
+broad and comprehensive coverage of the entire field. To begin the process of revision, the
+second edition of this book was extensively reviewed by a number of professors who teach
+the subject and by professionals working in the field. The result is that in many places the
+narrative has been clarified and tightened, and illustrations have been improved.
+Beyond these refinements to improve pedagogy and user-friendliness, there have
+been major substantive changes throughout the book. The most noteworthy changes are as
+follows:
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+•	 Fundamental security design principles: Chapter 1 includes a new section discussing the
+security design principles listed as fundamental by the National Centers of Academic
+Excellence in Information Assurance/Cyber Defense, which is jointly sponsored by the
+U.S. National Security Agency and the U.S. Department of Homeland Security.
+•	 Attack surfaces and attack trees: Chapter 1 includes a new section describing these two
+concepts, which are useful in evaluating and classifying security threats.
+•	 User authentication model: Chapter 3 includes a new description of a general model
+for user authentication, which helps to unify the discussion of the various approaches
+to user authentication.
+•	 Attribute-based access control (ABAC): Chapter 4 has a new section devoted to
+ABAC, which is becoming increasingly widespread.
+•	 Identity, credential, and access management (ICAM): Chapter 4 includes a new sec-
+tion on ICAM, which is a comprehensive approach to managing and implementing
+digital identities (and associated attributes), credentials, and access control.
+•	 Trust frameworks: Chapter 4 includes a new section on the Open Identity Trust
+Framework, which is an open, standardized approach to trustworthy identity and attri-
+bute exchange that is becoming increasingly widespread.
+•	 SQL injection attacks: Chapter 5 includes a new section on the SQL injection attack,
+which is one of the most prevalent and dangerous network-based security threats.
+•	 Cloud security: The material on cloud security in Chapter 5 has been updated and
+expanded to reflect its importance and recent developments.
+•	 Malware: The material on Malware, and on categories of intruders, has been revised to
+reflect the latest developments, including details of Advanced Persistent Threats, which
+are most likely due to nation state actors.
+•	 Intrusion detection/intrusion prevention systems: The material on IDS/IPS has been
+updated to reflect new developments in the field, including the latest developments in
+Host-Based Intrusion Detection Systems that assist in implementing a defense-in-depth
+strategy.
+xiiPreface   xiii
+	
+	
+	
+•	 Human resources: Security lapses due to human factors and social engineering are of
+increasing concern, including several recent cases of massive data exfiltration by insid-
+ers. Addressing such lapses requires a complex mix of procedural and technical con-
+trols, which we review in several significantly revised sections.
+•	 Mobile device security: Mobile device security has become an essential aspect of enter-
+prise network security, especially for devices in the category known as bring your own
+device (BYOD). A new section in Chapter 24 covers this important topic.
+•	 SHA-3: This recently adopted cryptographic hash standard is covered in a new
+appendix.

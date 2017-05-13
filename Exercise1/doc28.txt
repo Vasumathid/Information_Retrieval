@@ -1,0 +1,42 @@
+ction) and, if successful, leads to an undesirable violation of security, or threat
+consequence. The agent carrying out the attack is referred to as an attacker, or
+threat agent. We can distinguish two types of attacks:
+	
+	
+•	 Active attack: An attempt to alter system resources or affect their operation.
+•	 Passive attack: An attempt to learn or make use of information from the sys-
+tem that does not affect system resources.
+We can also classify attacks based on the origin of the attack:
+	
+	
+•	 Inside attack: Initiated by an entity inside the security perimeter (an ­“insider”).
+The insider is authorized to access system resources but uses them in a way not
+approved by those who granted the authorization.
+•	 Outside attack: Initiated from outside the perimeter, by an unauthorized or
+illegitimate user of the system (an “outsider”). On the Internet, potential
+outside attackers range from amateur pranksters to organized criminals, inter-
+national terrorists, and hostile governments.
+Finally, a countermeasure is any means taken to deal with a security attack.
+Ideally, a countermeasure can be devised to prevent a particular type of attack from
+succeeding. When prevention is not possible, or fails in some instance, the goal is to
+detect the attack and then recover from the effects of the attack. A countermeas-
+ure may itself introduce new vulnerabilities. In any case, residual vulnerabilities
+may remain after the imposition of countermeasures. Such vulnerabilities may be
+exploited by threat agents representing a residual level of risk to the assets. Owners
+will seek to minimize that risk given other constraints.
+	 1.2	 Threats, Attacks, and Assets
+We now turn to a more detailed look at threats, attacks, and assets. First, we look at
+the types of security threats that must be dealt with, and then give some examples of
+the types of threats that apply to different categories of assets.
+Threats and Attacks
+Table 1.2, based on RFC 4949, describes four kinds of threat consequences and lists
+the kinds of attacks that result in each consequence.
+Unauthorized disclosure is a threat to confidentiality. The following types of
+attacks can result in this threat consequence:
+	
+•	 Exposure: This can be deliberate, as when an insider intentionally releases
+sensitive information, such as credit card numbers, to an outsider. It can also
+be the result of a human, hardware, or software error, which results in an ­entity
+gaining unauthorized knowledge of sensitive data. There have been numerous
+instances of this, such as universities accidentally posting student confidential
+information on the Web.

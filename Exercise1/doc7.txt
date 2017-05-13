@@ -1,0 +1,1 @@
+We're going to create a list of all lowercased words in the text, and then produce a BigramCollocationFinder

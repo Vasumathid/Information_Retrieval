@@ -1,0 +1,68 @@
+This is going to be a fairly technical blog as I want people to not experience the difficulties I experienced while I was trying to get started on Hadoop.
+
+Ingredients:
+
+A working Linux machine, physical or virtual.
+Java Development Kit v1.8
+Latest stable binary release of Apache Hadoop. Not the Cloudera or MapR or Hortonworks or whatever distribution of it.
+IntelliJ IDEA Community Edition.
+Apache Maven for building the examples.
+There is one catch here: You can’t use Gradle instead of Maven. For some reason, Gradle refuses to download all the dependencies.
+
+First thing is to install JDK 1.8. Fortunately, doing that is pretty easy on Ubuntu 16.04. You just need to install a few packages and you’re ready to go.
+
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+sudo apt-get install oracle-java8-set-default
+After installation, you can verify the installation using:
+
+java -version
+If done right, the result should be something like:
+
+java version "1.8.0_111"
+Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
+Now, we need to download Hadoop binaries. Go to the Hadoop Releases link provided in the ingredients and download the latest stable binary. Don’t download source, download binary. The latest version is, as I’m writing, is 2.7.3. Download that version. You can just download off the browser if you have one available (i.e. you’re running on a Desktop environment). If it’s not, you can also use command line to download. You can go get the download link and use wget. After downloading the archive, extract the contents out of the file using this command and move them to /usr/local:
+
+wget www-eu.apache.org/dist/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz
+tar xzf hadoop-2.7.3.tar.gz
+mv hadoop-2.7.3 /usr/local
+After the installation, you first need to set up a hadoop user. I tried to bypass this step and continue using my own user, but I couldn’t get some aspects of hadoop running. It may or may not be that Hadoop requires its stuff to be run by a user, which is a member of a group named “hadoop”. I didn’t try adding my own user in the hadoop group before running stuff though, I just created another user and continued from there.
+
+sudo useradd hduser
+sudo passwd hduser
+sudo usermod -a -G sudo hduser
+sudo groupadd hadoop
+sudo usermod -a -G hadoop hduser
+Now, we created the user hduser, the group hadoop and added hduser to the group hadoop.
+
+wget www-eu.apache.org/dist/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz
+tar xzf hadoop-2.7.3.tar.gz
+mv hadoop-2.7.3 /usr/local
+mv /usr/local/hadoop-2.7.3 /usr/local/hadoop
+sudo chown -R hduser:hadoop /usr/local/hadoop
+Because we’re going to use hadoop with hduser only, we gave the ownership of the hadoop directory to hduser. Now, we should switch to hduser edit the bash profile of hduser:
+
+sudo su hduser
+sudo vim ~/.bashrc
+We now have to add the following to the bash profile:
+
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+export HADOOP_HOME=/usr/local/hadoop
+export PATH=$PATH:$HADOOP_HOME/bin
+export PATH=$PATH:$HADOOP_HOME/sbin
+export HADOOP_MAPRED_HOME=$HADOOP_HOME
+export HADOOP_COMMON_HOME=$HADOOP_HOME
+export HADOOP_HDFS_HOME=$HADOOP_HOME
+export YARN_HOME=$HADOOP_HOME
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
+export HADOOP_OPTS=”-Djava.library.path=$HADOOP_HOME/lib”
+Save and exit the file, and source it by:
+
+source ~/.bashrc
+Now you should set up passwordless ssh for the newly created hduser. You can really get away with not doing that, but it starts getting pretty annoying when you have to enter your password 4 times just to set up (pseudo-)distributed file system. In order to do that:
+
+ssh-keygen -t dsa -P '' -f ~/.ssh/id_dsa
+cat ~/.ssh/id_dsa.pub >> ~/.ssh/authorized_keys
+chmod 0600 ~/.ssh/authorized_keys

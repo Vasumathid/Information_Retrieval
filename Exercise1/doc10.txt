@@ -1,0 +1,2 @@
+The PorterStemmer knows a number of regular word forms and suffixes, and uses
+that knowledge to transform your input word to a final stem through a series of steps.

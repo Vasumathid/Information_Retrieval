@@ -1,0 +1,49 @@
+Also, you need to make the data directories for namenode and datanode data (the ones in hdfs-site.xml):
+
+mkdir -p /usr/local/hadoop_data/hduser/namenode
+mkdir -p /usr/local/hadoop_data/hduser/datanode
+After this, we should format the namenode with:
+
+hdfs namenode -format
+You should see “Namenode successfully formatted” in the logs. If you don’t see such a log and see a bunch of Java exceptions instead, do not proceed and look for a solution.
+
+Now, we should start distributed file system and yarn:
+
+start-dfs.sh
+start-yarn.sh
+After starting both, check the results with:
+
+jps
+
+You should be seeing something like:
+
+9008 NodeManager
+6242 SecondaryNameNode
+9797 Jps
+5865 NameNode
+8619 ResourceManager
+6028 DataNode
+Numbers do not matter but the process names should all exist. If you have them all, it means you have configured hadoop correctly and you’re ready to get to work.
+
+You should first try and check hdfs by:
+
+hadoop fs -ls
+It will probably give you a warning, stating that the directory named ‘.’ wasn’t found. Don’t worry here, nothing is wrong. That command is the equivalent of:
+
+hadoop fs -ls /user/hduser
+We know that /user/hduser directory doesn’t exist in our hdfs, because we know that nothing exists in our hdfs. We just formatted our hadoop distributed file system before starting. We will add the folder for our user and a folder in our user folder for the word count example:
+
+hadoop fs -mkdir /user
+hadoop fs -mkdir /user/hduser
+hadoop fs -mkdir /user/hduser/wordcount
+Just like that. Now let’s try and check our hdfs again:
+
+hadoop fs -ls
+This time, you should see the wordcount folder being listed. If it is, let’s proceed. If not, stop and look for solutions.
+
+Also, we should install Apache Maven for building our mapreduce code. Fortunately this is very simple on Ubuntu and can be done with a single command:
+
+sudo apt-get install maven
+Now open IntelliJ IDEA, Create a New Maven Project, No Archetypes. Now it asks you for group id, artifact id and version. People, when building tutorials, put their own nicknames in the group id and when you change it, something always happens with package names and stuff. Fortunately for you guys, I’m kind enough to leave out my own nickname in the group id.
+
+

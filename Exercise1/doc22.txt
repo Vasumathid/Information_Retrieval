@@ -1,0 +1,46 @@
+The objective of this book is to provide an up-to-date survey of developments in computer
+security. Central problems that confront security designers and security administrators
+include defining the threats to computer and network systems, evaluating the relative risks
+of these threats, and developing cost-effective and user friendly countermeasures.
+The following basic themes unify the discussion:
+	
+	
+	
+•	 Principles: Although the scope of this book is broad, there are a number of basic prin-
+ciples that appear repeatedly as themes and that unify this field. Examples are issues
+relating to authentication and access control. The book highlights these principles and
+examines their application in specific areas of computer security.
+•	 Design approaches: The book examines alternative approaches to meeting specific
+computer security requirements.
+•	 Standards: Standards have come to assume an increasingly important, indeed domi-
+nant, role in this field. An understanding of the current status and future direction of
+technology requires a comprehensive discussion of the related standards.xiv    Preface
+	
+•	 Real-world examples: A number of chapters include a section that shows the practical
+application of that chapter’s principles in a real-world environment.he major goal of this text is to make it as effective a teaching tool for this exciting and fast-moving
+subject as possible. This goal is reflected both in the structure of the book and in the supporting
+material. The text is accompanied by the following supplementary material to aid the instructor:
+
+•	 Projects manual: Project resources including documents and portable software, plus sug-
+gested project assignments for all of the project categories listed in the following section.
+•	 Solutions manual: Solutions to end-of-chapter Review Questions and Problems.
+•	 PowerPoint slides: A set of slides covering all chapters, suitable for use in lecturing.
+•	 PDF files: Reproductions of all figures and tables from the book.
+•	 Test bank: A chapter-by-chapter set of questions.
+•	 Sample syllabuses: The text contains more material than can be conveniently covered
+in one semester. Accordingly, instructors are provided with several sample syllabuses
+that guide the use of the text within limited time. These samples are based on real-
+world experience by professors with the first edition.
+All of these support materials are available at the Instructor Resource Center (IRC) for
+this textbook, which can be reached through the publisher’s Web site www.pearsonhighered
+.com/stallings or by clicking on the link labeled Pearson Resources for Instructors at this book’s
+Companion Web site at WilliamStallings.com/ComputerSecurity. To gain access to the IRC,
+please contact your local Pearson sales representative via pearsonhighered.com/educator/
+replocator/requestSalesRep.page or call Pearson Faculty Services at 1-800-526-0485.
+The Companion Web Site, at WilliamStallings.com/ComputerSecurity (click on the
+Instructor Resources link), includes the following:
+	
+	
+•	 Links to Web sites for other courses being taught using this book.
+•	 Sign-up information for an Internet mailing list for instructors using this book to
+exchange information, suggestions, and questions with each other and with the author.

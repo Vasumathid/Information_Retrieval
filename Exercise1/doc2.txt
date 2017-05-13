@@ -1,0 +1,2 @@
+Hypernyms provide a way to categorize and group words based on their similarity to each
+other.

@@ -1,0 +1,4 @@
+Since 1985 various evolutionary approaches to multiobjective optimization have been developed, capable of searching for multiple solutions concurrently in a single run. But the few comparative studies of different methods available to date are mostly qualitative and restricted to two approaches. In this paper an extensive, quantitative comparison is presented, applying four multiobjective evolutionary algorithms to an extended 0/1 knapsack problem.
+
+
+

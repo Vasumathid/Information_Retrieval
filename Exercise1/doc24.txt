@@ -1,0 +1,81 @@
+Following an introductory chapter, Chapter 1, the book is organized into five parts:
+Part One: Computer Security Technology and Principles: This part covers tech-
+nical areas that must underpin any effective security strategy. Chapter 2 lists
+the key cryptographic algorithms, discusses their use, and discusses issues of
+strength. The remaining chapters in this part look at specific technical areas of
+computer security: authentication, access control, database and cloud security,
+malicious software, denial of service, intrusion detection, and firewalls.
+Part Two: Software Security and Trusted Systems: This part covers issues
+concerning software development and implementation, including operat-
+ing systems, utilities, and applications. Chapter 10 covers the perennial issue
+of ­buffer overflow, while Chapter 11 examines a number of other software
+security issues. Chapter 12 takes an overall look at operating system security.
+The final chapter in this part deals with trusted computing and multilevel
+security, which are both software and hardware issues.
+Part Three: Management Issues: This part is concerned with management
+aspects of information and computer security. Chapters 14 and 15 focus
+specifically on management practices related to risk assessment, the setting up
+of security controls, and plans and procedures for managing computer ­security.
+Chapter 16 looks at physical security measures that must complement the
+technical security measures of Part One. Chapter 17 examines a wide range of
+human factors issues that relate to computer security. A vital management tool
+is security auditing, examined in Chapter 18. Finally, Chapter 19 examines legal
+and ethical aspects of computer security.
+Part Four: Cryptographic Algorithms: Many of the technical measures that
+support computer security rely heavily on encryption and other types of cryp-
+tographic algorithms. Part Four is a technical survey of such algorithms.
+Part Five: Internet Security: This part looks at the protocols and standards
+used to provide security for communications across the Internet. Chapter 22
+discusses some of the most important security protocols for use over the
+Internet. Chapter 23 looks at various protocols and standards related to
+authentication over the Internet. Chapter 24 examines important aspects of
+wireless security.
+A number of online appendices cover additional topics relevant to the book.
+	 0.2	 A Roadmap for Readers and Instructors
+This book covers a lot of material. For the instructor or reader who wishes a shorter
+treatment, there are a number of alternatives.0.3 / Support For Cissp Certification   3
+To thoroughly cover the material in the first two parts, the chapters should
+be read in sequence. If a shorter treatment in Part One is desired, the reader may
+choose to skip Chapter 5 (Database Security).
+Although Part Two covers software security, it should be of interest to users
+as well as system developers. However, it is more immediately relevant to the latter
+category. Chapter 13 (Trusted Computing and Multilevel Security) may be consid-
+ered optional.
+The chapters in Part Three are relatively independent of one another, with
+the exception of Chapters 14 (IT Security Management and Risk Assessment)
+and 15 (IT Security Controls, Plans, and Procedures). The chapters can be read
+in any order and the reader or instructor may choose to select only some of the
+chapters.
+Part Four provides technical detail on cryptographic algorithms for the inter-
+ested reader.
+Part Five covers Internet security and can be read at any point after Part One.
+	 0.3	 Support For Cissp Certification
+This book provides coverage of all the subject areas specified for CISSP (Certified
+Information Systems Security Professional) certification.
+As employers have come to depend on in-house staff to manage and develop
+security policies and technologies, and to evaluate and manage outside security
+services and products, there is a need for methods for evaluating candidates.
+Increasingly, employers are turning to certification as a tool for guaranteeing that
+a potential employee has the required level of knowledge in a range of security
+areas.
+The international standard ISO/IEC 17024 (General Requirements for Bodies
+Operating Certification of Persons) defines the following terms related to certification:
+	
+	
+	
+•	 Certification process: All activities by which a certification body establishes
+that a person fulfills specified competence requirements.
+•	 Certification scheme: Specific certification requirements related to specified
+categories of persons to which the same particular standards and rules, and the
+same procedures apply.
+•	 Competence: Demonstrated ability to apply knowledge and/or skills and,
+where relevant, demonstrated personal attributes, as defined in the certifica-
+tion scheme.
+The CISSP designation from the International Information Systems Security
+Certification Consortium (ISC) 2 , a nonprofit organization, is often referred to as
+the “gold standard” when it comes to information security certification. It is the
+only universally recognized certification in the security industry [SAVA03]. Many
+organizations, including the U.S. Department of Defense and many financial insti-
+tutions, now require that cyber security personnel have the CISSP certification
+[DENN11]. In 2004, CISSP became the first IT (Information Technology) program
+to earn accreditation under ISO/IEC 17024.

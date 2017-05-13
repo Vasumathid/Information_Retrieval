@@ -1,0 +1,39 @@
+Algorithms and other technologies
+The example above shows that we should consider algorithms, like computer hard-
+ware, as a technology. Total system performance depends on choosing efficient
+algorithms as much as on choosing fast hardware. Just as rapid advances are being
+made in other computer technologies, they are being made in algorithms as well.
+You might wonder whether algorithms are truly that important on contemporary
+computers in light of other advanced technologies, such as
+ advanced computer architectures and fabrication technologies,
+ easy-to-use, intuitive, graphical user interfaces (GUIs),
+ object-oriented systems,
+ integrated Web technologies, and
+ fast networking, both wired and wireless.
+The answer is yes. Although some applications do not explicitly require algorith-
+mic content at the application level (such as some simple, Web-based applications),
+many do. For example, consider a Web-based service that determines how to travel
+from one location to another. Its implementation would rely on fast hardware, a
+graphical user interface, wide-area networking, and also possibly on object ori-
+entation. However, it would also require algorithms for certain operations, such
+as finding routes (probably using a shortest-path algorithm), rendering maps, and
+interpolating addresses.
+Moreover, even an application that does not require algorithmic content at the
+application level relies heavily upon algorithms. Does the application rely on fast
+hardware? The hardware design used algorithms. Does the application rely on
+graphical user interfaces? The design of any GUI relies on algorithms. Does the
+application rely on networking? Routing in networks relies heavily on algorithms.
+Was the application written in a language other than machine code? Then it was
+processed by a compiler, interpreter, or assembler, all of which make extensive use14
+Chapter 1 The Role of Algorithms in Computing
+of algorithms. Algorithms are at the core of most technologies used in contempo-
+rary computers.
+Furthermore, with the ever-increasing capacities of computers, we use them to
+solve larger problems than ever before. As we saw in the above comparison be-
+tween insertion sort and merge sort, it is at larger problem sizes that the differences
+in efficiency between algorithms become particularly prominent.
+Having a solid base of algorithmic knowledge and technique is one characteristic
+that separates the truly skilled programmers from the novices. With modern com-
+puting technology, you can accomplish some tasks without knowing much about
+algorithms, but with a good background in algorithms, you can do much, much
+more.

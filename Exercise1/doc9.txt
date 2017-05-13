@@ -1,0 +1,2 @@
+In this chapter, we will go over various word replacement and correction techniques. The
+recipes cover the gamut of linguistic compression, spelling correction, and text normalization.

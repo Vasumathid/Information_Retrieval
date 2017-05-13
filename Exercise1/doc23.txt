@@ -1,0 +1,76 @@
+For many instructors, an important component of a computer security course is a project
+or set of projects by which the student gets hands-on experience to reinforce concepts from
+the text. This book provides an unparalleled degree of support for including a projects com-
+ponent in the course. The instructor’s support materials available through Pearson not only
+include guidance on how to assign and structure the projects but also include a set of user’s
+manuals for various project types plus specific assignments, all written especially for this
+book. Instructors can assign work in the following areas:
+	
+	
+	
+	
+	
+	
+	
+	
+•	 Hacking exercises: Two projects that enable students to gain an understanding of the
+issues in intrusion detection and prevention.
+•	 Laboratory exercises: A series of projects that involve programming and experiment-
+ing with concepts from the book.
+•	 Security education (SEED) projects: The SEED projects are a set of hands-on exer-
+cises, or labs, covering a wide range of security topics.
+•	 Research projects: A series of research assignments that instruct the student to research
+a particular topic on the Internet and write a report.
+•	 Programming projects: A series of programming projects that cover a broad range of
+topics and that can be implemented in any suitable language on any platform.
+•	 Practical security assessments: A set of exercises to examine current infrastructure and
+practices of an existing organization.
+•	 Firewall projects: A portable network firewall visualization simulator is provided,
+together with exercises for teaching the fundamentals of firewalls.
+•	 Case studies: A set of real-world case studies, including learning objectives, case
+description, and a series of case discussion questions.Preface   xvii
+	
+	
+	
+•	 Reading/report assignments: A list of papers that can be assigned for reading and writ-
+ing a report, plus suggested assignment wording.
+•	 Writing assignments: A list of writing assignments to facilitate learning the material.
+•	 Webcasts for teaching computer security: A catalog of webcast sites that can be used to
+enhance the course. An effective way of using this catalog is to select, or allow the student
+to select, one or a few videos to watch, and then to write a report/analysis of the video.
+This diverse set of projects and other student exercises enables the instructor to use the
+book as one component in a rich and varied learning experience and to tailor a course plan to
+meet the specific needs of the instructor and students. See Appendix A in this book for details.
+Acknowledgments
+This new edition has benefited from review by a number of people, who gave generously of
+their time and expertise. The following professors and instructors reviewed all or a large part
+of the manuscript: Stefan Robila (Montclair State University), Weichao Wang (University
+of North Carolina, Charlotte), Bob Brown (Southern Polytechnic State University), Leming
+Zhou (University of Pittsburgh), Yosef Sherif (Mihaylo College of Business and Economics),
+Nazrul Islam (Farmingdale State University), Qinghai Gao (Farmingdale State University),
+Wei Li (Nova Southeastern University), Jeffrey Kane (Nova Southeastern University), Philip
+John Lunsford II (East Carolina University), Jeffrey H. Peden (Longwood University), Ratan
+Guha (University of Central Florida), Sven Dietrich (Stevens Institute of Technology), and
+David Liu (Purdue University, Fort Wayne).
+Thanks also to the many people who provided detailed technical reviews of one or
+more chapters: Umair Manzoor (UmZ), Adewumi Olatunji (FAGOSI Systems, Nigeria),
+Rob Meijer, Robin Goodchil, Greg Barnes (Inviolate Security LLC), Arturo Busleiman
+(Buanzo Consulting), Ryan M. Speers (Dartmouth College), Wynand van Staden (School
+of Computing, University of South Africa), Oh Sieng Chye, Michael Gromek, Samuel
+Weisberger, Brian Smithson (Ricoh Americas Corp, CISSP), Josef B. Weiss (CISSP),
+Robbert-Frank Ludwig (Veenendaal, ActStamp Information Security), William Perry,
+Daniela Zamfiroiu (CISSP), Rodrigo Ristow Branco, George Chetcuti (Technical Editor,
+TechGenix), Thomas Johnson (Director of Information Security at a banking holding com-
+pany in Chicago, CISSP), Robert Yanus (CISSP), Rajiv Dasmohapatra (Wipro Ltd), Dirk
+Kotze, Ya’akov Yehudi, and Stanley Wine (Adjunct Lecturer, Computer Information Systems
+Department, Zicklin School of Business, Baruch College).
+Dr. Lawrie Brown would first like to thank Bill Stallings for the pleasure of work-
+ing with him to produce this text. I would also like to thank my colleagues in the School of
+Engineering and Information Technology, UNSW Canberra at the Australian Defence Force
+Academy for their encouragement and support.
+Finally, we would like to thank the many people responsible for the publication of the
+book, all of whom did their usual excellent job. This includes the staff at Pearson, particularly
+our editor Tracy Dunkelberger, program manager Carole Snyder, and production manager
+Bob Engelhardt. We also thank the production staff at Jouve India for another excellent and
+rapid job. Thanks also to the marketing and sales staff at Pearson, without whose efforts this
+book would not be in your hands.

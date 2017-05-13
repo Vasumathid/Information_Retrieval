@@ -1,0 +1,47 @@
+Getting Started
+This chapter will familiarize you with the framework we shall use throughout the
+book to think about the design and analysis of algorithms. It is self-contained, but
+it does include several references to material that we introduce in Chapters 3 and 4.
+(It also contains several summations, which Appendix A shows how to solve.)
+We begin by examining the insertion sort algorithm to solve the sorting problem
+introduced in Chapter 1. We define a “pseudocode” that should be familiar to you if
+you have done computer programming, and we use it to show how we shall specify
+our algorithms. Having specified the insertion sort algorithm, we then argue that it
+correctly sorts, and we analyze its running time. The analysis introduces a notation
+that focuses on how that time increases with the number of items to be sorted.
+Following our discussion of insertion sort, we introduce the divide-and-conquer
+approach to the design of algorithms and use it to develop an algorithm called
+merge sort. We end with an analysis of merge sort’s running time.
+2.1
+Insertion sort
+Our first algorithm, insertion sort, solves the sorting problem introduced in Chap-
+ter 1:
+Input: A sequence of n numbers ha 1 ; a 2 ; : : : ; a n i.
+Output: A permutation (reordering) ha 1 0 ; a 2 0 ; : : : ; a n 0 i of the input sequence such
+that a 1 0  a 2 0      a n 0 .
+The numbers that we wish to sort are also known as the keys. Although conceptu-
+ally we are sorting a sequence, the input comes to us in the form of an array with n
+elements.
+In this book, we shall typically describe algorithms as programs written in a
+pseudocode that is similar in many respects to C, C++, Java, Python, or Pascal. If
+you have been introduced to any of these languages, you should have little troubleAsymptotic notation, functions, and running times
+We will use asymptotic notation primarily to describe the running times of algo-
+rithms, as when we wrote that insertion sort’s worst-case running time is ‚.n 2 /.
+Asymptotic notation actually applies to functions, however. Recall that we charac-
+terized insertion sort’s worst-case running time as an 2 CbnCc, for some constants
+a, b, and c. By writing that insertion sort’s running time is ‚.n 2 /, we abstracted
+away some details of this function. Because asymptotic notation applies to func-
+tions, what we were writing as ‚.n 2 / was the function an 2 C bn C c, which in
+that case happened to characterize the worst-case running time of insertion sort.
+In this book, the functions to which we apply asymptotic notation will usually
+characterize the running times of algorithms. But asymptotic notation can apply to
+functions that characterize some other aspect of algorithms (the amount of space
+they use, for example), or even to functions that have nothing whatsoever to do
+with algorithms.
+Even when we use asymptotic notation to apply to the running time of an al-
+gorithm, we need to understand which running time we mean. Sometimes we are
+interested in the worst-case running time. Often, however, we wish to characterize
+the running time no matter what the input. In other words, we often wish to make
+a blanket statement that covers all inputs, not just the worst case. We shall see
+asymptotic notations that are well suited to characterizing running times no matter
+what the input.

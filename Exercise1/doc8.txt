@@ -1,0 +1,1 @@
+In addition to BigramCollocationFinder , there's also TrigramCollocationFinder ,for finding triples instead of pairs.

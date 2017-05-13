@@ -1,0 +1,103 @@
+There are a number of ways of classifying and characterizing the ­countermeasures
+that may be used to reduce vulnerabilities and deal with threats to system assets.
+It will be useful for the presentation in the remainder of the book to look at ­several
+approaches, which we do in this and the next two sections. In this ­section, we view coun-
+termeasures in terms of functional requirements, and we follow the ­classification
+defined in FIPS 200 (Minimum Security Requirements for Federal Information and
+Information Systems). This standard enumerates 17 security-related areas with
+regard to protecting the confidentiality, integrity, and availability of information
+systems and the information processed, stored, and transmitted by those systems.
+The areas are defined in Table 1.4.
+The requirements listed in FIPS 200 encompass a wide range of counter-
+measures to security vulnerabilities and threats. Roughly, we can divide these coun-
+termeasures into two categories: those that require computer security technical
+measures (covered in this book in Parts One and Two), either hardware or software,
+or both; and those that are fundamentally management issues (covered in Part Three).
+Each of the functional areas may involve both computer security techni-
+cal measures and management measures. Functional areas that primarily require
+computer security technical measures include access control, identification and
+authentication, system and communication protection, and system and information
+integrity. Functional areas that primarily involve management controls and proce-
+dures include awareness and training; audit and accountability; certification, accredi-
+tation, and security assessments; contingency planning; maintenance; physical and
+environmental protection; planning; personnel security; risk assessment; and systems
+and services acquisition. Functional areas that overlap computer security technical
+measures and management controls include configuration management, incident
+response, and media protection.
+Note that the majority of the functional requirements areas in FIPS 200 are
+either primarily issues of management or at least have a significant management
+component, as opposed to purely software or hardware solutions. This may be new
+to some readers and is not reflected in many of the books on computer and informa-
+tion security. But as one computer security expert observed, “If you think technology
+can solve your security problems, then you don’t understand the problems and you26    Chapter 1 / Overview
+Table 1.4  Security Requirements
+Access Control: Limit information system access to authorized users, processes acting on behalf of authorized
+users, or devices (including other information systems) and to the types of transactions and functions that
+authorized users are permitted to exercise.
+Awareness and Training: (i) Ensure that managers and users of organizational information systems are made
+aware of the security risks associated with their activities and of the applicable laws, regulation, and policies
+related to the security of organizational information systems; and (ii) ensure that personnel are adequately
+trained to carry out their assigned information security-related duties and responsibilities.
+Audit and Accountability: (i) Create, protect, and retain information system audit records to the
+extent needed to enable the monitoring, analysis, investigation, and reporting of unlawful, unauthorized,
+or inappropriate information system activity; and (ii) ensure that the actions of individual information
+system users can be uniquely traced to those users so they can be held accountable for their
+actions.
+Certification, Accreditation, and Security Assessments: (i) Periodically assess the security controls in
+organizational information systems to determine if the controls are effective in their application; (ii) develop
+and implement plans of action designed to correct deficiencies and reduce or eliminate vulnerabilities in
+organizational information systems; (iii) authorize the operation of organizational information systems and any
+associated information system connections; and (iv) monitor information system security controls on an
+ongoing basis to ensure the continued effectiveness of the controls.
+Configuration Management: (i) Establish and maintain baseline configurations and inventories of
+organizational information systems (including hardware, software, firmware, and documentation)
+throughout the respective system development life cycles; and (ii) establish and enforce security
+configuration settings for information technology products employed in organizational information
+systems.
+Contingency Planning: Establish, maintain, and implement plans for emergency response, backup opera-
+tions, and postdisaster recovery for organizational information systems to ensure the availability of critical
+information resources and continuity of operations in emergency situations.
+Identification and Authentication: Identify information system users, processes acting on behalf of users, or
+devices, and authenticate (or verify) the identities of those users, processes, or devices, as a prerequisite to
+allowing access to organizational information systems.
+Incident Response: (i) Establish an operational incident-handling capability for organizational information
+systems that includes adequate preparation, detection, analysis, containment, recovery, and user-response
+activities; and (ii) track, document, and report incidents to appropriate organizational officials and/or
+authorities.
+Maintenance: (i) Perform periodic and timely maintenance on organizational information systems; and (ii)
+provide effective controls on the tools, techniques, mechanisms, and personnel used to conduct information
+system maintenance.
+Media Protection: (i) Protect information system media, both paper and digital; (ii) limit access to informa-
+tion on information system media to authorized users; and (iii) sanitize or destroy information system media
+before disposal or release for reuse.
+Physical and Environmental Protection: (i) Limit physical access to information systems, equipment, and
+the respective operating environments to authorized individuals; (ii) protect the physical plant and support
+infrastructure for information systems; (iii) provide supporting utilities for information systems; (iv) protect
+information systems against environmental hazards; and (v) provide appropriate environmental controls in
+facilities containing information systems.
+Planning: Develop, document, periodically update, and implement security plans for organizational informa-
+tion systems that describe the security controls in place or planned for the information systems and the rules
+of behavior for individuals accessing the information systems.
+(Continued)1.4 / Fundamental Security Design Principles   27
+Personnel Security: (i) Ensure that individuals occupying positions of responsibility within organizations
+(including third-party service providers) are trustworthy and meet established security criteria for those
+positions; (ii) ensure that organizational information and information systems are protected during and after
+personnel actions such as terminations and transfers; and (iii) employ formal sanctions for personnel failing to
+comply with organizational security policies and procedures.
+Risk Assessment: Periodically assess the risk to organizational operations (including mission, functions,
+image, or reputation), organizational assets, and individuals, resulting from the operation of organizational
+information systems and the associated processing, storage, or transmission of organizational information.
+Systems and Services Acquisition: (i) Allocate sufficient resources to adequately protect organizational
+information systems; (ii) employ system development life cycle processes that incorporate information
+security considerations; (iii) employ software usage and installation restrictions; and (iv) ensure that third-
+party providers employ adequate security measures to protect information, applications, and/or services
+outsourced from the organization.
+System and Communications Protection: (i) Monitor, control, and protect organizational communications
+(i.e., information transmitted or received by organizational information systems) at the external boundaries
+and key internal boundaries of the information systems; and (ii) employ architectural designs, software devel-
+opment techniques, and systems engineering principles that promote effective information security within
+organizational information systems.
+System and Information Integrity: (i) Identify, report, and correct information and information system flaws
+in a timely manner; (ii) provide protection from malicious code at appropriate locations within organizational
+information systems; and (iii) monitor information system security alerts and advisories and take appropriate
+actions in response.

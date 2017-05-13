@@ -1,0 +1,55 @@
+Computer Science Student Resource Site
+William Stallings also maintains the Computer Science Student Resource Site, at
+ComputerScienceStudent.com. The purpose of this site is to provide documents,
+information, and links for computer science students and professionals. Links and
+documents are organized into five categories:0.7 / Standards   9
+	
+	
+	
+	
+	
+•	 Math: Includes a basic math refresher, a queuing analysis primer, a number
+system primer, and links to numerous math sites.
+•	 How-to: Advice and guidance for solving homework problems, writing technical
+reports, and preparing technical presentations.
+•	 Research resources: Links to important collections of papers, technical
+reports, and bibliographies.
+•	 Other useful: A variety of other useful documents and links.
+•	 Computer science careers: Useful links and documents for those considering a
+career in computer science.
+Other Web Sites
+Numerous Web sites provide information related to the topics of this book. The
+Companion Website provides links to these sites, organized by chapter.
+There are a number of worthwhile Web-based forums dealing with aspects of
+computer security. The Companion Web site provides links to these.
+	 0.7	 Standards
+Many of the security techniques and applications described in this book have been
+specified as standards. Additionally, standards have been developed to cover man-
+agement practices and the overall architecture of security mechanisms and services.
+Throughout this book, we describe the most important standards in use or that are
+being developed for various aspects of computer security. Various organizations
+have been involved in the development or promotion of these standards. The most
+important (in the current context) of these organizations are as follows:
+	
+	
+	
+•	 National Institute of Standards and Technology: NIST is a U.S. federal agency
+that deals with measurement science, standards, and technology related to
+U.S. government use and to the promotion of U.S. private sector innovation.
+Despite its national scope, NIST Federal Information Processing Standards
+(FIPS) and Special Publications (SP) have a worldwide impact.
+•	 Internet Society: ISOC is a professional membership society with worldwide
+organizational and individual membership. It provides leadership in address-
+ing issues that confront the future of the Internet and is the organization home
+for the groups responsible for Internet infrastructure standards, including the
+Internet Engineering Task Force (IETF) and the Internet Architecture Board
+(IAB). These organizations develop Internet standards and related specifica-
+tions, all of which are published as Requests for Comments (RFCs).
+•	 ITU-T: The International Telecommunication Union (ITU) is an interna-
+tional organization within the United Nations System in which governments
+and the private sector coordinate global telecom networks and services. The
+ITU Telecommunication Standardization Sector (ITU-T) is one of the three
+sectors of the ITU. ITU-T’s mission is the production of standards cover-
+ing all fields of telecommunications. ITU-T standards are referred to as
+Recommendations.10    Chapter 0 / Reader’s and Instructor’s Guide
+•	 ISO: The International Organization for Standardization (ISO) 1 is a world-

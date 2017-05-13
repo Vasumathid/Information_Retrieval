@@ -1,0 +1,2 @@
+﻿As you can see, reference book is a hypernym of cookbook , but cookbook is only one of
+many hyponyms of reference book.
