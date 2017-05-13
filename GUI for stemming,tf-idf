@@ -1,0 +1,148 @@
+from tkinter import *
+import re, math
+from collections import Counter
+import nltk
+from nltk.corpus import stopwords
+from nltk.stem import PorterStemmer
+from nltk.tokenize import word_tokenize
+import math
+from textblob import TextBlob as tb
+
+
+WORD = re.compile(r'\w+')
+
+def tf(word, blob):
+    return blob.words.count(word) / len(blob.words)
+
+def n_containing(word, bloblist):
+    return sum(1 for blob in bloblist if word in blob.words)
+
+def idf(word, bloblist):
+    return math.log(len(bloblist) / (1 + n_containing(word, bloblist)))
+
+def tfidf(word, blob, bloblist):
+    return tf(word, blob) * idf(word, bloblist)
+	
+	
+document1 = tb(open('Exercise1/Evolution/doc1.txt','r').read())
+
+document2 = tb(open('Exercise1/Evolution/doc2.txt','r').read())
+
+document3 = tb(open('Exercise1/Evolution/doc3.txt','r').read())
+
+bloblist = [document1, document2, document3]
+def tfidfsc():
+    for i, blob in enumerate(bloblist):
+        text11.insert(0.0,(("Top words in document {}\n".format(i + 1))))
+        scores = {word: tfidf(word, blob, bloblist) for word in blob.words}
+        sorted_words = sorted(scores.items(), key=lambda x: x[1], reverse=True)
+        for word, score in sorted_words[:3]:
+            text11.insert(0.0,("\tWord: {}, TF-IDF: {}\n".format(word, round(score, 5))))		
+		
+		
+def get_cosine(vec1, vec2):
+     intersection = set(vec1.keys()) & set(vec2.keys())
+     numerator = sum([vec1[x] * vec2[x] for x in intersection])
+
+     sum1 = sum([vec1[x]**2 for x in vec1.keys()])
+     sum2 = sum([vec2[x]**2 for x in vec2.keys()])
+     denominator = math.sqrt(sum1) * math.sqrt(sum2)
+
+     if not denominator:
+        return 0.0
+     else:
+        return float(numerator) / denominator
+
+def text_to_vector(text):
+     words = WORD.findall(text)
+     return Counter(words)
+
+def cosine():
+     text1 = open('Exercise1/Evolution/doc1.txt','r').read()
+     text2 = open('Exercise1/Evolution/doc2.txt','r').read()
+     vector1 = text_to_vector(text1)
+     vector2 = text_to_vector(text2)
+     vector3 = text_to_vector(entry_1.get())
+
+     cosine1 = get_cosine(vector1, vector3)
+     cosine2 = get_cosine(vector3, vector2)
+     if(cosine1>cosine2):
+          text11.delete(0.0,END)
+          text11.insert(0.0,("Document 1 is more similar",cosine1))
+     elif(cosine2>cosine1):
+          text11.delete(0.0,END)
+          text11.insert(0.0,("Document 2 is more similar",cosine2))
+     else:
+          text11.delete(0.0,END)
+          text11.insert(0.0,"No match")
+	
+def stemming():
+    #files=["doc1.txt","doc2.txt"]
+    #for filea in files:
+    a=open('Exercise1/Evolution/doc1.txt','r').read()
+    x=a.split(" ")
+    print (x)
+	
+
+    stemmer=PorterStemmer()
+    print (x.sort())
+    
+    english_stops = set(stopwords.words('english'))
+    words=x
+    abcx=[word for word in words if word not in english_stops]
+    print (abcx)
+    text11.delete(0.0,END)
+
+    for i in abcx:
+		#b[i]=stemmer.stem(i)
+         
+         text11.insert(0.0,stemmer.stem(i))
+         text11.insert(0.0,"\n")
+	#print ("size of document",len(stemmer.stem()))
+		
+		
+#def __init__():
+     #Frame.__init__()
+     #grid()
+     #create_widgets()
+	
+
+		
+root= Tk()
+root.title("IR Tool")
+def show():
+     text11.delete(0.0,END)
+     text1 = open('Exercise1/doc16.txt','r').read()
+     text11.insert(0.0, text1)
+
+
+def printName():
+     text11.delete(0.0,END)
+     text11.insert(0.0,entry_1.get())
+
+onelabel = Label(root, text="Enter Query")
+entry_1 = Entry(root)
+
+button2=Button(root, text="Cosine",command=cosine)
+button3=Button(root, text="Stemming",command=stemming)
+button4=Button(root, text="Show",command=show)
+
+text11=Text(width =50)
+text11.grid(row=3,column=0,sticky=W)
+onelabel.grid(row=0,sticky=E)
+
+button2.grid(row=1,column=1,sticky=W)
+button3.grid(row=1,column=2,sticky=W)
+button4.grid(row=1,column=3,columnspan=2,sticky=W)
+
+entry_1.grid(row=0,column=3,sticky=W)
+Checkbutton(root, text = "Tf-Idf").grid(row=2,columnspan=2)
+
+#def jaccard():
+
+
+#Checkbutton
+
+
+
+root.mainloop()
